@@ -16,7 +16,13 @@ body {
 
 button {
   margin-top: 40px;
+  display: flex;
   
+}
+
+.cards_flexcontainer {
+  display: flex;
+  justify-content: center;
 }
 
 

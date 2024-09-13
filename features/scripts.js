@@ -38,7 +38,40 @@ const cardData = [
     // Add more card data as needed
   ];
 
-  cardData.forEach(data => {
+cardData.forEach(data => {
     const card = createCard(data.front, data.back);
     cardsContainer.appendChild(card);
+  });
+
+
+// Show the first card initially
+const cards = document.querySelectorAll('.card-wrapper');
+if (cards.length > 0) {
+  cards[0].style.display = 'block';
+  totalCardsSpan.textContent = cards.length;
+}
+
+
+ // Function to update card visibility
+ function updateCardVisibility() {
+    cards.forEach((card, index) => {
+      card.style.display = index === currentCardIndex ? 'block' : 'none';
+    });
+    currentCardSpan.textContent = currentCardIndex + 1;
+  }
+
+  // Add functionality to the Next button
+  nextButton.addEventListener('click', () => {
+    if (currentCardIndex < cards.length - 1) {
+      currentCardIndex++;
+      updateCardVisibility();
+    }
+  });
+
+  // Add functionality to the Previous button
+  prevButton.addEventListener('click', () => {
+    if (currentCardIndex > 0) {
+      currentCardIndex--;
+      updateCardVisibility();
+    }
   });
