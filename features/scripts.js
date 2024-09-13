@@ -29,3 +29,16 @@ function createCard(frontText, backText) {
 
     return cardWrapper;
   }
+
+// Add multiple cards to the container
+const cardData = [
+    { front: 'Привет (Privet)', back: 'Hello' },
+    { front: 'Спасибо (Spasibo)', back: 'Thank you' },
+    { front: 'Пожалуйста (Pozhaluysta)', back: 'Please' },
+    // Add more card data as needed
+  ];
+
+  cardData.forEach(data => {
+    const card = createCard(data.front, data.back);
+    cardsContainer.appendChild(card);
+  });
