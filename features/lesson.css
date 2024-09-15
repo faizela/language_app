@@ -12,6 +12,13 @@ body {
     text-align: center;
 }
 
+h2 {
+    position: relative;
+    top: 95px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
 .lesson-section {
     display: flex;
     flex-direction: column;
@@ -28,15 +35,71 @@ body {
     box-shadow: 0 0 10px 5px rgb(122, 123, 124);
 }
 
+.part-one {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.lesson-img {
+    grid-area: 1 / 1 / 4 / 4;
+    max-width: 70%;
+    padding: 3rem 1rem 3rem 3rem;
+    border-radius: 25% 10%;
+}
+
+.lesson-text {
+    grid-area: 1 / 4 / 4 / 6;
+    padding: 2rem 4rem 3rem 0;
+    font-size: 1.1rem;
+}
+
+.vocabulary {
+    padding: 1.5rem 0;
+    font-size: 1.3rem;
+}
+
+.vocabulary span {
+    font-weight: 600;
+}
+
+.prompt {
+    padding-top: 1rem;
+}
+
+.lesson-questions {
+    grid-area: 4 / 1 / 6 / 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input.radio-input {
+    visibility: hidden;
+}
+
+.radio-input+label {
+    padding: .6rem;
+    border: 2px solid #e09018;
+    border-radius: 10px;
+}
+
+.radio-input+label:hover {
+    background-color: #f2d1a2;
+    cursor: pointer;
+}
+
 .buttons {
     display: flex;
     justify-content: space-around;
 }
 
-.button {
+button {
     padding: 1rem 1.5rem;
     background-color: rgb(63, 154, 234);
     border: none;
     border-radius: 10px;
     color: #FFFFFF;
+    font-size: 1.3rem;
 }
