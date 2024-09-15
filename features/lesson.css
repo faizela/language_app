@@ -80,26 +80,13 @@ input.radio-input {
 }
 
 .radio-input+label {
-    padding: .6rem;
+    padding: .4rem;
     border: 2px solid #e09018;
     border-radius: 10px;
+    font-size: 1.1rem;
 }
 
 .radio-input+label:hover {
-    background-color: #f2d1a2;
+    background-color: #eddabf;
     cursor: pointer;
-}
-
-.buttons {
-    display: flex;
-    justify-content: space-around;
-}
-
-button {
-    padding: 1rem 1.5rem;
-    background-color: rgb(63, 154, 234);
-    border: none;
-    border-radius: 10px;
-    color: #FFFFFF;
-    font-size: 1.3rem;
 }
