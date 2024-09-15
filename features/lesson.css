@@ -1,0 +1,113 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    background-color: #e09018;
+}
+
+#main-heading {
+    color: #FFFFFF;
+    position: relative;
+    top: 90px;
+    text-align: center;
+}
+
+h2 {
+    position: relative;
+    top: 95px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.lesson-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: 100px;
+    left: 25%;
+    max-width: 50%;
+}
+
+.lesson {
+    background-color: #FFFFFF;
+    height: 550px;
+    box-shadow: 0 0 10px 5px rgb(122, 123, 124);
+}
+
+.part-one {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.lesson-img {
+    grid-area: 1 / 1 / 4 / 4;
+    max-width: 70%;
+    padding: 3rem 1rem 3rem 3rem;
+    border-radius: 25% 10%;
+}
+
+.lesson-text {
+    grid-area: 1 / 4 / 4 / 6;
+    padding: 2rem 4rem 3rem 0;
+    font-size: 1.1rem;
+}
+
+.vocabulary {
+    padding: 1.5rem 0;
+    font-size: 1.3rem;
+}
+
+.vocabulary span {
+    font-weight: 600;
+}
+
+.prompt {
+    padding-top: 1rem;
+}
+
+.lesson-questions,
+.explanation {
+    grid-area: 4 / 1 / 6 / 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explanation {
+    font-size: 1.1rem;
+    display: none;
+    text-align: center;
+}
+
+input.radio-input {
+    visibility: hidden;
+}
+
+.radio-input+label {
+    padding: .4rem;
+    border: 2px solid #e09018;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    user-select: none;
+}
+
+.radio-input+label:hover {
+    background-color: #eddabf;
+    cursor: pointer;
+}
+
+.continue {
+    display: none;
+    position: relative;
+    left: 45%;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 0.5rem;
+    background-color: rgb(73, 182, 237);
+    color: #FFFFFF;
+    font-size: 1rem;
+    max-width: 130px;
+}
